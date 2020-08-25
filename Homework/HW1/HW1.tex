@@ -154,7 +154,9 @@ $
 0 & -1\\
 -3 & 0\\
 11 & 4
-\end{bmatrix}=
+\end{bmatrix}=$\\
+\bigskip
+$
 \begin{bmatrix}
 1(6)-1(0)-3(6)+7(11) & 1(2)-1(-1)+6(0)+7(4)\\
 6(9)+0(0)-3(8)+11 & 9(2)-1(0)+8(0)+4\\
@@ -248,5 +250,137 @@ $l_{1}=\sum_{i=1}^{n}|a_{n}|$\\
 \end{center}
 
 For {\bf a}, $l_{1}=|5|+|0|+|-1|+|4|=10$ and for {\bf b}, $l_{1}=|7|+|9|+|5|+|2|=23$.
+
+{\bf 3.3.} The $l_{2}$ norm is simply the square root of the sum of squares of each element:
+
+\begin{center}
+
+$l_{2}=\sqrt{\sum_{i=1}^{n}a_{i}^{2}}$\\
+
+\end{center}
+
+The values of the $l_{2}$ norm for each vector is shown below:
+
+\begin{center}
+
+$l_{2}({\bf a})=\sqrt{5^{2}+0^{2}+(-1)^{2}+4^{2}}=\sqrt{42}$\\
+\bigskip
+$l_{2}({\bf b})=\sqrt{7^{2}+9^{2}+5^{2}+2^{2}}=\sqrt{159}$\\
+
+\end{center}
+
+{\bf 3.4.} The $l_{\infty}$ norm computes the absolute maximal element in the vector.
+
+\begin{center}
+
+$l_{\infty}=max_{n}|x_{n}|$\\
+
+\end{center}
+
+For {\bf a}, $l_{\infty}=5$ and for {\bf b}, $l_{\infty}=9$. 
+
+{\bf 4.1.} For rolling two dices where each has six faces numbered 1 to 6, the sample space is $\mathbb{Z}[1, 6]*\mathbb{Z}[1,6]$, or the cartesian product of the integers from 1 to 6 with itself. This produces pairs of integers $(1,1), (1,2), (1,3),...,(6,6)$. Note that this notation does specify that the first coordinate denotes the value of the first dice and the second coordinate denotes the value of the second dice. 
+
+{\bf 4.2.} Our sample space has cardinality of 36. Therefore, the probability of any event $X$ can be calculated with the following equation.
+
+\begin{center}
+
+$\mathbb{P}(X)=\dfrac{|X|}{36}$\\
+
+\end{center}
+
+We need to find all the elements of the sample space that satisfy the property that the value of both dices add up to 10. We notice that $(5,5),(6,4),(4,6)$ satisfy this condition. Therefore $\mathbb{P}($Sum of dices equals 10$)=\dfrac{3}{36}=\dfrac{1}{12}$. 
+
+{\bf 4.3.} This problem follows similar logic to the previous question. The elements of $\Omega$ that sum to 6 are $(1,5),(5,1),(2,4),(4,2),(3,3)$. There are 5 elements in this subset, therefore the probability of the sum equalling 6 is $\dfrac{5}{36}$. 
+
+{\bf 5.1.} Recall that the expectation of a continuous random variable can be computed as shown below.
+
+\begin{center}
+
+$E[X]=\displaystyle \int_{-\infty}^{\infty}xp(x)dx$\\
+
+\end{center}
+
+We notice for the Uniform distribution, it is only defined for the interval $[a,b]$. The computation for the expectation of the Uniform distribution is shown below.
+
+\begin{center}
+
+$E[X]=\displaystyle \int_{a}^{b}\dfrac{x}{b-a}dx=\dfrac{1}{b-a}\displaystyle \int_{a}^{b}xdx=$\\
+\bigskip
+$\dfrac{1}{b-a}[\dfrac{1}{2}x^{2}]_{a}^{b}=\dfrac{1}{2(b-a)}[b^{2}-a^{2}]=\dfrac{(b-a)(b+a)}{2(b-a)}=\dfrac{b+a}{2}$\\
+
+\end{center}
+
+{\bf 5.2.} The standard deviation of a distribution is the square root of the variance of the distribution. The variance of a distribution can be computed using the following equation.
+
+\begin{center}
+
+$Var(X)=E[(X-E[X])^{2}]=E[X^{2}]-E[X]^{2}$\\
+
+\end{center}
+
+The only extra value we need to compute is $E[X^{2}]$. Note, $E[f(x)]=\displaystyle\int f(x)p(x)dx$.
+
+\begin{center}
+
+$E[X^{2}]=\dfrac{1}{b-a}\displaystyle\int_{a}^{b}x^{2}dx=\dfrac{1}{b-a}[\dfrac{1}{3}x^{3}]_{a}^{b}=\dfrac{1}{3(b-a)}[b^{3}-a^{3}]=\dfrac{(b-a)(a^{2}+ab+b^{2})}{3(b-a)}=$\\
+\bigskip
+$\dfrac{a^{2}+ab+b^{2}}{3}$\\
+\bigskip
+$Var(X)=\dfrac{a^{2}+ab+b^{2}}{3}-(\dfrac{b+a}{2})^{2}=\dfrac{a^{2}+ab+b^{2}}{3}-\dfrac{b^{2}+2ab+a^{2}}{4}=$\\
+\bigskip
+$\dfrac{4a^{2}+4ab+4b^{2}}{12}-\dfrac{3b^{2}+6ab+3a^{2}}{12}=\dfrac{b^{2}-2ab+a^{2}}{12}=$\\
+\bigskip
+$\dfrac{(b-a)^{2}}{12}$\\
+
+\end{center}
+
+Therefore the standard deviation is equal to $\dfrac{b-a}{\sqrt{12}}$. 
+
+{\bf 6.1.} The computation for the accuracy of this detector is shown below.
+
+\begin{center}
+
+$A=\dfrac{37+55}{37+23+45+55}=0.575$\\
+
+\end{center}
+
+{\bf 6.2.} The balanced accuracy weighs each class equally to discourage skewed classification. Let $+1$ denote avocado and $-1$ denote no avocado.
+
+\begin{center}
+
+$A_{+1}=\dfrac{37}{37+23}=0.617$\\
+\bigskip
+$A_{-1}=\dfrac{55}{45+55}=0.55$\\
+\bigskip
+$A_{b}=\dfrac{A_{+1}+A_{-1}}{2}=\dfrac{0.617+0.55}{2}=0.5833$\\
+
+\end{center}
+
+{\bf 6.3.} The precision measures the number of true positives detected out of all positives detected.
+
+\begin{center}
+
+$P=\dfrac{TP}{TP+FP}=\dfrac{37}{37+45}=0.45122$\\
+
+\end{center}
+
+{\bf 6.4.} The recall measures the amount of true positives detected out of all positive values.
+
+\begin{center}
+
+$R=\dfrac{TP}{TP+FN}=\dfrac{37}{37+23}=0.617$\\
+
+\end{center}
+
+{\bf 6.5.} The equation for F-measure is shown below.
+
+\begin{center}
+
+$F_{1}=2\dfrac{PR}{P+R}=\dfrac{TP}{TP+0.5(FP+FN)}=\dfrac{37}{37+0.5(45+23)}=0.521$\\
+
+\end{center}
+
+{\bf 7.1.} 
 
 \end{document}
