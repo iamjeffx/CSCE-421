@@ -381,6 +381,139 @@ $F_{1}=2\dfrac{PR}{P+R}=\dfrac{TP}{TP+0.5(FP+FN)}=\dfrac{37}{37+0.5(45+23)}=0.52
 
 \end{center}
 
-{\bf 7.1.} 
+{\bf 7.1.} If the threshold for the ROC is set to 0, then the values for $TP, FP, TN, FN$ are shown below.
+
+\begin{center}
+
+$TP=5$\\
+$TN=0$\\
+$FP=5$\\
+$FN=0$\\
+
+\end{center}
+
+Using these values, the TPR and FPR are calculated to be the following values.
+
+\begin{center}
+
+$TPR=\dfrac{5}{5+0}=1$\\
+\bigskip
+$FPR=\dfrac{5}{5+0}=1$\\
+
+\end{center}
+
+{\bf 7.2.} The threshold has now increased to $0.25$. This gives us the following values for the confusion matrix.
+
+\begin{center}
+
+$TP=4$\\
+$TN=3$\\
+$FP=2$\\
+$FN=1$\\
+
+\end{center}
+
+These values for the confusion matrix give us the following values for TPR and FPR.
+
+\begin{center}
+
+$TPR=\dfrac{4}{4+1}=\dfrac{4}{5}=0.8$\\
+\bigskip
+$FPR=\dfrac{2}{2+3}=\dfrac{2}{5}=0.4$\\
+
+\end{center}
+
+{\bf 7.3.} The values for the confusion matrix for a threshold value of 0.5 are shown below.
+
+\begin{center}
+
+$TP=3$\\
+$TN=3$\\
+$FP=2$\\
+$FN=2$\\
+
+\end{center}
+
+The values for TPR and FPR for this threshold value are shown below.
+
+\begin{center}
+
+$TPR=\dfrac{3}{3+2}=\dfrac{3}{5}=0.6$\\
+\bigskip
+$FPR=\dfrac{2}{2+3}=\dfrac{2}{5}=0.4$\\
+
+\end{center}
+
+{\bf 7.4.} The values for the confusion matrix for a threshold value of 0.75 are shown below.
+
+\begin{center}
+
+$TP=1$\\
+$TN=5$\\
+$FP=0$\\
+$FN=4$\\
+
+\end{center}
+
+The values for TPR and FPR for this threshold value are shown below.
+
+\begin{center}
+
+$TPR=\dfrac{1}{1+4}=\dfrac{1}{5}=0.2$\\
+\bigskip
+$FPR=\dfrac{0}{0+5}=\dfrac{2}{5}=0$\\
+
+\end{center}
+
+{\bf 7.5.} The values for the confusion matrix for a threshold value of 1 are shown below.
+
+\begin{center}
+
+$TP=0$\\
+$TN=5$\\
+$FP=0$\\
+$FN=5$\\
+
+\end{center}
+
+The values for TPR and FPR for this threshold value are shown below.
+
+\begin{center}
+
+$TPR=\dfrac{0}{0+5}=0$\\
+\bigskip
+$FPR=\dfrac{0}{0+5}=0$\\
+
+\end{center}
+
+{\bf 7.6.} The plot for the ROC is shown below.
+
+\begin{center}
+
+\includegraphics[width=8cm, height=6cm]{ROC_Plot}
+
+\end{center}
+
+To compute this Riemann sum, I will be using a step-size of $0.2$ because the values for each point in the ROC seem to be in steps of $0.2$ and by having step sizes of $0.2$, there would be enough rectangles for a good approximate answer but also not too many rectangles that would result in an inefficient computation time. Looking at the curve, there seems to be two continuous linear lines that compose the ROC curve. I will be using two two lines to determine the heights of the rectangles for the Riemann sums. For values that have two values of TPR for a single value of FPR, I will be only considering the maximal point for the AUROC. The computation for the area of the 5 rectangles is shown below.
+
+\begin{center}
+
+$TPR=0.2+1.5FPR, FPR\in \mathbb{R}[0,0.4]$\\
+\bigskip
+$TPR=\dfrac{2}{3}+\dfrac{1}{3}FPR, FPR\in \mathbb{R}[0.4,1]$\\
+\bigskip
+$R_{1}=0.2*h_{1}=0.35*0.2=0.07$\\
+\bigskip
+$R_{2}=0.2*h_{2}=0.2*0.65=0.13$\\
+\bigskip
+$R_{3}=0.2*h_{3}=0.2*\dfrac{2}{3}=0.1\bar{33}$\\
+\bigskip
+$R_{4}=0.2*h_{4}=0.2*0.9=0.18$\\
+\bigskip
+$R_{5}=0.2*h_{5}=0.2*0.9667=0.19\bar{33}$\\
+\bigskip
+$\displaystyle \sum_{i=1}^{5}R_{i}=0.7067$\\
+
+\end{center}
 
 \end{document}
