@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.11) (preloaded format=pdflatex 2020.11.16)  21 NOV 2020 19:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.11) (preloaded format=pdflatex 2020.11.16)  21 NOV 2020 23:29
 entering extended mode
 **./Project_Report.tex
 (Project_Report.tex
@@ -347,24 +347,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 48--49
  []
 
 
-Underfull \hbox (badness 7522) in paragraph at lines 50--51
+Underfull \hbox (badness 7522) in paragraph at lines 52--53
 []\OT1/ptm/m/n/10 Logistical Re-gres-sion is a clas-sic model used in
  []
 
 
-Underfull \hbox (badness 5161) in paragraph at lines 50--51
+Underfull \hbox (badness 5161) in paragraph at lines 52--53
 \OT1/ptm/m/n/10 clas-si-fi-ca-tion prob-lems. It uses a non-linear lo-gis-ti-ca
 l
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 50--51
-
- []
-
-
-Underfull \hbox (badness 2828) in paragraph at lines 52--53
-[]\OT1/ptm/m/n/10 Random Forests are an ex-ten-sion of de-ci-sion trees.
  []
 
 
@@ -372,17 +362,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 52--53
 
  []
 
-[1{C:/Users/jeffr/AppData/Local/MiKTeX/pdftex/config/pdftex.map}
 
-
-]
 Underfull \hbox (badness 10000) in paragraph at lines 54--55
 
  []
 
+[1{C:/Users/jeffr/AppData/Local/MiKTeX/pdftex/config/pdftex.map}
 
-Underfull \hbox (badness 10000) in paragraph at lines 56--57
 
+]
+Underfull \hbox (badness 2828) in paragraph at lines 58--59
+[]\OT1/ptm/m/n/10 Random Forests are an ex-ten-sion of de-ci-sion trees.
  []
 
 
@@ -396,17 +386,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 60--61
  []
 
 
-Underfull \hbox (badness 7326) in paragraph at lines 62--63
+Underfull \hbox (badness 10000) in paragraph at lines 64--65
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 66--67
+
+ []
+
+
+Underfull \hbox (badness 7326) in paragraph at lines 70--71
 \OT1/ptm/m/n/10 some ad-di-tional sam-pling meth-ods to coun-ter-act the
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 62--63
+Underfull \hbox (badness 10000) in paragraph at lines 70--71
 \OT1/ptm/m/n/10 im-bal-anced dataset. Specif-i-cally, un-der-sam-pling was
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 62--63
+Underfull \hbox (badness 10000) in paragraph at lines 70--71
 
  []
 
@@ -436,7 +436,7 @@ urw/times/utmb8a.pfb><C:/Users/jeffr/AppData/Local/Programs/MiKTeX/fonts/type1/
 urw/times/utmbi8a.pfb><C:/Users/jeffr/AppData/Local/Programs/MiKTeX/fonts/type1
 /urw/times/utmr8a.pfb><C:/Users/jeffr/AppData/Local/Programs/MiKTeX/fonts/type1
 /urw/times/utmri8a.pfb>
-Output written on Project_Report.pdf (2 pages, 64330 bytes).
+Output written on Project_Report.pdf (2 pages, 65613 bytes).
 PDF statistics:
  26 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
